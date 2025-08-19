@@ -164,4 +164,4 @@ Faire un clustering de films par similarité (genres, votes, durée).
 
 Holo Amon-Donovan (@HDonzo)
 
-Projet académique / exploratoire sur les données IMDb.
+Projet personnel / exploratoire sur les données IMDB.
