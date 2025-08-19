@@ -79,6 +79,7 @@ Random Forest : bien plus robuste, meilleur R² et RMSE plus bas.
 
 📂 Organisation du projet
 
+```
 IMDB/
 │── data/                # Fichiers TSV IMDb
 │── notebooks/           # Notebooks exploratoires
@@ -88,6 +89,8 @@ IMDB/
 │── predict.ipynb        # Notebook de modélisation
 │── README.md            # Présentation du projet
 │── requirements.txt     # Dépendances Python
+```
+
 
 
 🚀 Installation & Utilisation
