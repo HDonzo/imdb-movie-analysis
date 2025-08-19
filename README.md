@@ -31,13 +31,16 @@ title.ratings.tsv → Notes et nombre de votes
 
 ⚙️ Méthodologie
 
-1. Nettoyage des données (Pandas)
+1. Nettoyage & Préparation des données (Pandas)
 
 Suppression des doublons et valeurs manquantes.
 
 Conversion en numérique (startYear, numVotes, averageRating).
 
+Merge entre title.basics.tsv et title.ratings.tsv (gestion des doublons averageRating_x / averageRating_y).
+
 Gestion des genres multi-labels avec MultiLabelBinarizer.
+
 
 2. Visualisations (Matplotlib / Seaborn)
 
@@ -45,7 +48,7 @@ Distribution des genres (Top 10).
 
 Comparaison temporelle (2000–2010 vs 2011–2025).
 
-Scatterplots : numVotes vs averageRating.
+Top 10 Films les plus populaires (2000-2010 et 2011-2025).
 
 3. Modélisation (Scikit-Learn)
 
@@ -73,9 +76,30 @@ Random Forest Regressor.
 
 🤖 Modélisation
 
+Objectif : prédire averageRating en fonction de :
+
+numVotes
+
+startYear
+
+runtimeMinutes
+
+Genres encodés
+
+
+🚀 Résultats & Observations
+
+Les genres Drama, Comedy et Documentary dominent en fréquence.
+
+Les notes IMDb tendent à être stables au fil du temps, mais le nombre de productions explose après 2000.
+
+Le nombre de votes (numVotes) est un facteur déterminant dans la stabilité de la note.
+
 Régression linéaire : performances limitées (ne capte pas les non-linéarités).
 
 Random Forest : bien plus robuste, meilleur R² et RMSE plus bas.
+
+➡️ La Random Forest donne de meilleurs résultats que la régression linéaire (R² plus élevé).
 
 
 📂 Organisation du projet
@@ -124,6 +148,8 @@ predict.ipynb → Modélisation et prédictions.
 
 🔮 Améliorations futures
 
+Ajouter davantage de modèles (Gradient Boosting, XGBoost).
+
 Ajouter un modèle deep learning (TensorFlow/PyTorch).
 
 Construire un dashboard interactif (Streamlit / Plotly).
@@ -132,7 +158,7 @@ Construire un dashboard interactif (Streamlit / Plotly).
 
 Faire un clustering de films par similarité (genres, votes, durée).
 
-
+Étendre l’analyse aux métadonnées (title.principals, name.basics).
 
 👨‍💻 Auteur
 
