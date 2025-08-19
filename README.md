@@ -17,6 +17,7 @@ Mettre en place un modèle de prédiction des notes.
 
 🗂️ Données utilisées
 
+```
 name.basics.tsv → Infos sur les personnes (acteurs, réalisateurs, etc.)
 
 title.akas.tsv → Titres alternatifs selon pays/langues
@@ -26,7 +27,7 @@ title.basics.tsv → Métadonnées (titre, type, années, genres)
 title.principals.tsv → Casting principal
 
 title.ratings.tsv → Notes et nombre de votes
-
+```
 
 ⚙️ Méthodologie
 
@@ -96,30 +97,30 @@ IMDB/
 🚀 Installation & Utilisation
 
 Cloner le repo :
-
+```
 git clone https://github.com/HDonzo/imdb-movie-analysis.git
 cd imdb-movie-analysis
-
+```
 
 Installer les dépendances :
 
-
+```
 pip install -r requirements.txt
-
+```
 
 Lancer Jupyter Notebook :
 
-
+```
 jupyter notebook
-
+```
 
 Exécuter :
 
-
+```
 project.ipynb → Exploration et visualisations.
 
 predict.ipynb → Modélisation et prédictions.
-
+```
 
 🔮 Améliorations futures
 
