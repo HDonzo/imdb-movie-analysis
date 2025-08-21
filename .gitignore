@@ -14,3 +14,13 @@ data/processed/
 # OS
 .DS_Store
 Thumbs.db
+Data/raw/
+data/raw/
+*.tsv
+
+# Environnements / caches
+venv/
+.env
+.ipynb_checkpoints/
+_pycache_/
+.DS_Store
